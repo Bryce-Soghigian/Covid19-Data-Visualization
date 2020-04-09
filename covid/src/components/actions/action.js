@@ -13,9 +13,10 @@ function fetchStateDataPending(){
     }
 }
 function fetchStateDataSuccess(data){
+    console.log(data,"data in action.js")
     return{
         type:FETCH_STATE_DATA_SUCCESS,
-        data:data
+        payload:data
     }
 }
 function fetchStateDataError(error){

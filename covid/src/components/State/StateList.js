@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux';
 import { getData, getDataPending,getDataError } from '../reducers';
 import { bindActionCreators } from 'redux';
-import FetchData from '../actions/fetchData'
+// import FetchData from '../actions/fetchData'
 import {store} from '../../index';
 
 function StateList(props) {
@@ -22,10 +22,10 @@ const mapStateToProps = state => ({
     data:getData(state),
     pending: getDataPending(state)
 })
-const mapDispatchToProps = dispatch => bindActionCreators({
-    fetchData:FetchData
-},dispatch)
+// const mapDispatchToProps = dispatch => bindActionCreators({
+//     fetchData:FetchData
+// },dispatch)
 export default connect(
     mapStateToProps,
-    mapDispatchToProps
+    // mapDispatchToProps
 )(StateList)

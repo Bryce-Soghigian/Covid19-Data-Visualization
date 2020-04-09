@@ -12,8 +12,9 @@ import StateList from './StateList'
     const {data, error, pending} = props;
     useEffect(() => {
         const {fetchData} = props;
+        console.log(props,"PROOROOROOfpfdojpfdshfs")
         fetchData()
-    })
+    },[])
     if(pending === true){
         return (
             <div>

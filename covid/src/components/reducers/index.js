@@ -15,6 +15,7 @@ export function rootReducer(state=intitalState,action){
                 pending:true
             }
         case FETCH_STATE_DATA_SUCCESS:
+            console.log(action.payload,"payload in rootReducer")
             return{
                 ...state,
                 pending:false,
